@@ -74,3 +74,6 @@ variable "health_check_interval" {
 
 variable "health_check_threshold" {
 }
+
+variable "alb-name" {
+}
