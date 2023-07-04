@@ -62,3 +62,15 @@ variable "internal-domain-name" {
 variable "internal-domain-weight" {
 }
 
+variable "health-check-path" {
+  
+}
+
+variable "health-check-port" {
+}
+
+variable "health_check_interval" {
+}
+
+variable "health_check_threshold" {
+}
