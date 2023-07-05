@@ -1,6 +1,6 @@
 resource "aws_launch_configuration" "launch_config" {
   name_prefix                 = "${var.launch-config-name}"
-  image_id                    = "${data.aws_ami.ubuntu.image_id}"
+  image_id                    = "${aws_ami.ubuntu.image_id}"
   instance_type               = "${var.instance-type}"
   iam_instance_profile        = "${var.iam-role-name != "" ? var.iam-role-name : ""}"
   key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"

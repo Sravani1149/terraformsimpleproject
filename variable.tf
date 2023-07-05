@@ -19,7 +19,7 @@ variable "ssl_certificate_arn" {
 variable "launch-config-name" {
 }
 
-variable "instance_type" {
+variable "instance-type" {
 }
 
 variable "iam-role-name" {
@@ -76,4 +76,13 @@ variable "health_check_threshold" {
 }
 
 variable "alb-name" {
+}
+
+variable "mybucket1" {
+}
+
+variable "mybucket2" {
+}
+
+variable "target-group-name" { 
 }
