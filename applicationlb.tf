@@ -1,5 +1,5 @@
 resource "aws_lb" "application_LB" {
-  # name                       = "${var.alb-name}"
+  name                       = "${var.alb-name}"
   internal                   = false
   load_balancer_type         = "application"
   security_groups            = ["${aws_security_group.SGRP.id}"]
@@ -61,7 +61,7 @@ resource "aws_lb_listener" "redirect" {
       port        = "443"
       protocol    = "HTTPS"
       status_code = "HTTP_301"
-      
+
     }
   }
 }
