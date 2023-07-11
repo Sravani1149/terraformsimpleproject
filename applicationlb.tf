@@ -15,7 +15,7 @@ resource "aws_lb_target_group" "TGRP" {
   protocol    = "HTTP"
   vpc_id      = "${aws_vpc.myvpc.id}"
 
-  health_check = {
+ /* health_check = {
     interval            = "${var.health_check_interval}"
     healthy_threshold   = "${var.health_check_threshold}"
     unhealthy_threshold = var.health_check_threshold
@@ -23,9 +23,11 @@ resource "aws_lb_target_group" "TGRP" {
     path                = var.health-check-path
     port                = var.health-check-port
     matcher             = "200"
-  }
 
-  tags = {
+   }
+   */
+
+    tags = {
     Name = "application_TGRP"
   }
 }
