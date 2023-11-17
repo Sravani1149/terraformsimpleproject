@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_terraformsimpleproject_1700217489813-pr-trigger-input-set
+  identifier: Build_terraformsimpleproject_1700217489813prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_terraformsimpleproject_1700217489813
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
